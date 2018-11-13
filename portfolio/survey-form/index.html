@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+</head>
+<body>
+ 
+    <div id="form-inner">
+        <h1 id="title">Survey Form</h1>
+        <hr>
+        <p id="description">Top Programming Languages of 2018</p>
+        <br>
+    
+        <form id="survey-form">
+            <label id="name-label" for="name" min="2">Name:</label>
+            <input type='text' name="name" placeholder="Full Name" id="name" class="input-field" required>
+            <br>
+            <label id="email-label" for="email">Email:</label>
+            <input type='email' name="email" placeholder="Email" id="email" class="input-field" required>
+            <br>
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" name="number" placeholder="Age" id="number" class="input-field" min="1" max="105" required>
+            <br><br>
+
+            <div class="row">
+            <div class="sub-headings">Programming Language of Choice?</div>
+                <div class="right-group">
+                    <select name="languages" id="dropdown" required>
+                        <option value="">None</option>
+                        <option value="c++">C++</option>
+                        <option value="c#">C#</option>
+                        <option value="c">C</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="php">PHP</option>
+                        <option value="sql">SQL</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+            <div class="sub-headings">Prefer Another Language?</div>
+                <div class="right-group">
+                  <div class="radio-btn" required>
+                    <input type="radio" name="radio" value="yes">Yes
+                    <input type="radio" name="radio" value="no">No
+                  </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="sub-headings">Preferred Language?</div>
+                    <div class="right-group">
+                        <ul class="preferred required">
+                        <li><input type="checkbox" name="checkbox1" value="c++">C++</li>
+                        <li><input type="checkbox" name="checkbox2" value="c#">C#</li>
+                        <li><input type="checkbox" name="checkbox3" value="c">C</li>
+                        <li><input type="checkbox" name="checkbox4" value="javascript">Javascript</li>
+                        <li><input type="checkbox" name="checkbox5" value="java">Java</li>
+                        <li><input type="checkbox" name="checkbox6" value="python">Python</li>
+                        <li><input type="checkbox" name="checkbox7" value="php">PHP</li>
+                        <li><input type="checkbox" name="checkbox8" value="sql">SQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+            
+            <div class="row">
+                <div class="sub-headings">Additional Comments:</div>
+                <div class="right-group"><textarea name="message" placeholder="Additional comments..."></textarea>
+            </div>
+            <br><br>
+            
+                <button type="submit" name="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

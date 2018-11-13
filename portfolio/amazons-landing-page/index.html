@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <title>Amazon Landing Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header id="header">
+            <img id="header-img" src="img/amazon-header.png">
+
+            <nav id="nav-main">
+                <div class="container-flex">
+                    <div class="container-try-prime">
+                        <div class="btn-toggle-nav" >
+                            <span class="hamburger-icons" onclick="openNav()">&#9776;</span> 
+                        </div>
+                        <img class="nav-sprite" src="img/amazon-sprite.png">
+                        <span class="prime">Try Prime</span>
+                    </div>
+
+                    <div class="search">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">All
+                                <i class="fas fa-caret-down dropdown"></i>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">&#10003;  All Departments</a>
+                                <a href="#">Alexa Skills</a>
+                                <a href="#">Amazon Devices</a>
+                                <a href="#">Amazon Fresh</a>
+                                <a href="#">Amazon Warehouse</a>
+                                <a href="#">Appliances</a>
+                                <a href="#">Apps &amp; Games</a>
+                                <a href="#">Arts, Crafts &amp; Sewing</a>
+                                <a href="#">Automotive Parts &amp; Accessories</a>
+                                <a href="#">Baby</a>
+                                <a href="#">Beauty &amp; Personal Care</a>
+                                <a href="#">Books</a>
+                                <a href="#">CDs &amp; Vinyl</a>
+                                <a href="#">Cell Phones &amp; Accessories</a>
+                                <a href="#">Clothing, Shoes &amp; Jewelry</a>
+                                <a href="#">Collectibles &amp; Fine Art</a>
+                                <a href="#">Computers</a>
+                                <a href="#">Courses</a>
+                                <a href="#">Credit and Payment Cards</a>
+                                <a href="#">Digital Music</a>
+                                <a href="#">Electronics</a>
+                                <a href="#">Garden &amp; Outdoor</a>
+                                <a href="#">Gift Cards</a>
+                                <a href="#">Grocery &amp; Gourmet Food</a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Search..">
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <img class="black-friday-img" src="img/black-friday-img.jpg">
+                </div>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </li>
+                    <li>
+                        <a class="nav-link link1" href="#">
+                            <span class="link1-span">Deliver to Sorush</span>
+                            <br>Portland 97219</li>
+                    <li>
+                        <a class="nav-link link2" href="#">
+                            <span class="nav-link-gray">Browsing History</span>
+                            <i class="fas fa-caret-down"></i>
+                    </li>
+                    <li>
+                        <a class="nav-link link3" id="push" href="#">
+                            <span class="nav-link-gray">Sorush's Amazon.com</span>
+                    </li>
+                    <li>
+                        <span class="nav-link-gray">EN</span>
+                        <br>
+                        <span class="nav-link link4">
+                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-caret-down"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a class="nav-link link5" href="#">
+                            <span class="nav-link-gray">Hello, Sorush</span>
+                            <br>
+                            Accounts &amp; Lists
+                            <i class="fas fa-caret-down"></i>
+                    </li>
+                    <li>
+                        <a class="nav-link link6" href="#">Orders
+                    </li>
+                    <li>
+                        <a class="nav-link link7" href="#">Try Prime
+                            <i class="fas fa-caret-down"></i>
+                    </li>
+                    <li>
+                        <a class="nav-link link8 cart" href="#">
+                            <img src="img/amazon-carts.png">Cart
+                            <span class="cart-empty">0</span>
+                    </li>
+                </ul>
+                <div class="line-after"></div>
+            </nav>
+
+            
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+                    <ul>
+              
+                        <div class="toggle-heading">
+                            <img class="login-logo" src="img/user-login-logo.png">
+                            <p>Hello, <span>Sorush</span></p>
+                        </div>
+                        
+                        <span class="toggle-sub-heading">SHOP BY CATEGORY</span>          
+
+                    <li>
+                        <div>
+                        <a href="#">Prime Video</a>
+                        <i class="fas fa-angle-right"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Amazon Music</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Echo &amp; Alexa</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Fire Tablets</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Fire TV</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Kindle E-readers &amp; Books</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Appstore for Android</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Books &amp; Audible </a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Movies, Music &amp; Games</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Electronics, Computers &amp; Office</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Alexa Smart Home</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Home, Garden &amp; Tools</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Pet Supplies</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Food &amp; Grocery</a>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+
+                    <hr>
+
+                    <li><span class="settings">HELP &amp; SETTINGS</li></span>
+                    <li>
+                        <a href="#">Your Account</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i> English
+                    </li>
+                    <li>
+                        <img class="flag" src="img/flag.jpg">
+                        <a href="#">United States</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <div class="footer">
+                        <a href="#">Sign In</a>
+                    </div>
+                    </li>
+                   
+                </ul>
+            </div>
+        
+           
+        </header>
+
+        <!-- Carousel & Modal -->
+        <div class="wrapper-slider">
+            <div id="arrow-left" class="arrow">
+                <i class="fa fa-angle-left"></i>
+                <i class="fa fa-angle-right"></i>  
+            </div>
+
+            <div id="slider">
+                <div class="slide slide1">
+                    <div class="slide-content">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-content">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="slide-content">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="arrow-right" class="arrow"></div>
+
+
+            <div class="single">Remember to vote November 6, 2018. Ask Alexa to remind you.
+                <a href="https://www.amazon.com/b?node=18289176011&pf_rd_p=aa6f161d-b08b-48ea-bfe2-e919161ad026&pf_rd_r=GY93JEEVB9GQVH81EBJY">
+                    Learn more</a>
+            </div>
+
+            <div class="wrapper-modal">
+                <div class="box box1">
+                    <span class="modal-header">Early Black Friday deals</span>
+                    <div class="modal-img modal-img1"></div>
+                    <p class="modal-footer">Deals in every department</p>
+                    <br>
+                    <a class="shop-link" href="#">Shop now</a>
+                </div>
+
+                <div class="box box2">
+                    <span class="modal-header">Buy 2, save $20</span>
+                    <div class="modal-img modal-img2"></div>
+                    <p class="modal-footer">All-new Echo Dot. Discount reflected at checkout.</p>
+                    <a class="shop-link" href="#">Learn more</a>
+                </div>
+
+                <div class="box box3">
+                    <span class="modal-header">Buy 2, save $100</span>
+                    <div class="modal-img modal-img3"></div>
+                    <p class="modal-footer">All-new Echo Show. Discount reflected at checkout.</p>
+                    <a class="shop-link" href="#">Learn more</a>
+                </div>
+
+                <div class="box box4">
+                    <span class="modal-header">Sign in for the best experience</span>
+                    <div class="box4-btn">
+                        <button>Sign in securely</button>
+                    </div>
+
+                    <div class="box box5">
+                        <div class="modal-img modal-img4"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

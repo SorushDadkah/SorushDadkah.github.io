@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/tic.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <audio>
+      <source src="audio/placeAvatar.mp3" type="audio/mpeg">
+    </audio>
+    <audio>
+      <source src="audio/winGame.mp3" type="audio/mpeg">
+    </audio>
+    <audio>
+      <source src="audio/tieGame.mp3" type="audio/mpeg">
+    </audio>
+    <audio>
+      <source src="audio/diceRoll.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="gameMsgBox" onclick="hideGameMsg()"><p id="gameMsg"></p> </div>
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+<!--Left Config. && Start Game Button-->
+          <strong>Current Config:</strong>
+          <label>&nbsp;Player 1: &nbsp; <span id="p1Display">X</span></label>
+          <label>&nbsp;Player 2: &nbsp; <span id="p2Display">O</span></label>  
+      <br>
+      <button type="button" class="btn-xs btn-primary" id="btnStart" onclick="startGame()" >Start Game</button>
+      <br>
+      
+      <button type="button" class="btn-xs btn-danger" id="btnStop" onclick="stopGame()">Stop Game</button>  
+      <div id="controls">
+        <div id="messageFrame">
+          <p id="showHeader">Active Player:</p>
+        <div class="hr">
+        </div>
+        <br>
+          <p id="showPlayer">Game Stopped</p>
+        </div>
+      </div>
+    </div>
+
+<!--Game board-->
+    <div class="col-8">
+        <div class="game-board">
+            <div class="box box0">X</div>
+            <div class="box box1">O</div>
+            <div class="box box2">O</div>
+            <div class="box box3">O</div>
+            <div class="box box4">X</div>
+            <div class="box box5">O</div>
+            <div class="box box6">O</div>
+            <div class="box box7">X</div>
+            <div class="box box8">X</div>
+        </div>
+      </div>
+
+  <!--Right Config && Stop Game Button-->   
+    <div class="col-2">
+          <strong>Configuration:</strong>
+        <div class="dropdown">
+            <label>&nbsp; Player 1: &nbsp; <span id="p1Display"></span></label>
+          <button class="btn-xs btn-info dropdown-toggle" type="button" id="player1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            X
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">X</button>
+            <button class="dropdown-item" type="button">O</button>
+          </div>
+          <br>
+            <label>&nbsp; Player 2: &nbsp; <span id="p2Display"></span></label> 
+          <button class="btn-xs btn-info dropdown-toggle" type="button" id="player2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            X
+          </button> 
+          <br>
+
+          <button id="btnSave" type="button" class="btn-xs btn-light" onclick="saveConfig()">Save Config</button> 
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">X</button>
+            <button class="dropdown-item" type="button">O</button>
+          </div>  
+
+        </div> 
+      </div>
+    </div>
+</div>
+</body>
+</html>

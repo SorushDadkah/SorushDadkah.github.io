@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+
+#title {
+    margin-bottom: 0;
+}
+
+hr {
+    width: 200px;
+}
+
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background-color: rgb(123, 159, 206);
+    padding: 1em;
+    min-width: 320px;
+    text-align: center;
+}
+
+#form-inner {
+   background-color: white;
+   max-width: 900px;
+   margin: 0 auto;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   padding: 50px 0;
+   border-radius: 10px;
+   box-shadow: 0 0 20px 0 rgba(72, 93, 116, 0.7);
+}
+
+.sub-headings {
+    padding: 5px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 40%;
+}
+
+.right-group {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+
+#survey-form input {
+    font-size: 14px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+}
+
+.input-field {
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+}
+
+#dropdown {
+    height: 35px;
+    width: 140px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+#number-label {
+    margin-left: 12px;
+}
+
+
+#survey-form input:invalid:focus {
+    box-shadow: 0 0 5px 1px red;
+}
+
+textarea {
+    margin-right: 150px;
+    margin-left: 10px;
+    resize: vertical;
+    max-height: 100px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    height: 80px;
+    width: 200px;
+}
+
+ul.preferred {
+    padding-left: 0;
+    margin: 0;
+}
+
+.preferred li {
+    list-style: none;
+}
+
+#submit {
+    background-color: #59ace0;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    border: 0px solid #59ace0;;
+    border-radius: 4px;
+}
+
+#submit:hover {
+    background-color: #359ddd;
+    transition: .5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+    #survey-form > * {
+        padding: 1em;
+    }
+    .container-preferred  {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    body{
+        padding:0;
+        margin: 0;
+    }
+    #form-inner {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .input-field {
+      width: 80%;
+    }
+    select {
+      width: 90%;
+    }
+    #survey-form > * {
+        padding: 0;
+    }
+    #survey-form input {
+        padding: 1em;
+    }
+    .sub-headings {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .right-group {
+        width:100%;
+        text-align: center;
+    }
+    .preferred {
+        text-align: left;
+        display: inline-block;
+    }
+    .preferred li {
+        margin-left: 50px;
+    }
+    textarea {
+        width: 90%;
+        height: 80px;
+        margin: 0;
+    }
+}

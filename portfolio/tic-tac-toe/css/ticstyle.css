@@ -1,0 +1,160 @@
+/*Board Game*/
+.game-board{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #2c3e50;
+  border-radius: 10px;
+	display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  box-shadow: 3px 3px 5px 6px #017d96;
+}
+
+.game-board > .box{
+  border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 3px 3px 5px 6px #017d96;
+}
+
+.game-board> .box:hover{
+  background-color: #017d96;
+}
+
+.game-board > .box:nth-child(even){
+  background: #243749;
+}
+.game-board > .box:nth-child(even):hover{
+  background-color: #017d96; 
+}
+
+/*Left-Config.*/
+.col-2{
+  width: 80px;
+  height: 200px;
+  border: solid #3c536b 10px;
+  padding: 5px;
+  font-family: helvetica;
+  background: #243749;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 6px #017d96;
+  }
+
+#btnStart{
+  border-radius: 5px;
+  margin-left: 20px;
+  top: 50%;
+  left: 50%;
+}
+
+#btnStop {
+  border-radius: 5px;
+  margin-left: 20px;
+  top: 50%;
+  left: 50%;
+  margin-top: 8px;
+}
+
+/*Active Player - left side panel*/
+#messageFrame {
+  width: 160px;
+  height: 125px;
+  border: solid #3c536b 10px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: helvetica;
+  background: #243749;
+  color: white;
+  margin-top: 230px; 
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center; 
+  box-shadow: 1px 1px 5px 6px #017d96;
+}
+
+.hr{
+  border-bottom: 2px solid #ccc;
+}
+
+#p1-left{
+  margin-top: 25px;
+}
+/*Right Side */
+#player1{
+  margin-top: 5px;
+}
+/*Right-Config*/
+.config-right{
+  box-sizing: border-box;
+  width: 180px;
+  height: 180px;
+  border: solid #3c536b 10px;
+  padding: 5px;
+  font-family: helvetica;
+  background: #243749;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+  }
+
+#btnSave {
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  margin-left: 22px;
+  margin-top: 20px;
+}
+
+ /*Dropdown menu player colors*/ 
+#player1, #player2{
+  background-color: #0c333a;
+  border-color: #2a95a9;
+}
+
+#gameMsgBox {
+  cursor: pointer;
+  display: none;
+  width: 500px;
+  height: 340px;
+  position: absolute;
+  text-align: center;
+  margin: 140px 0 0 230px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px -4px rgba(0 0 0 0.55);
+}
+
+#gameMsgBox #gameMsg{
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  color: #34495e;
+}
+
+.O {
+	transition: transform .3s;
+	opacity: 1;
+	position: absolute;
+	background-image: url("../images/avatarO.gif");
+	width:200px;
+	height:200px;
+	transform: translateY(-100%);
+}
+
+.X {
+	transition: transform .3s;
+	opacity: 1;
+	background-image: url("../images/avatarX.gif");
+	width:200px;
+	height:200px;
+	transform: translateY(100%);
+}
+
