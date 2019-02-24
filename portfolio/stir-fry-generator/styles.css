@@ -16,6 +16,10 @@ hr {
     width: 270px;
 }
 
+.backgroundtop {
+    display: flex;
+}
+
 #stirFryButton {
     background: #1f9ed4;
     width: 600px;
