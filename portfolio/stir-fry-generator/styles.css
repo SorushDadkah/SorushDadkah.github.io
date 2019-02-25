@@ -31,7 +31,7 @@
 }
 
 hr {
-    width: 270px;
+    max-width: 270px;
 }
 
 .backgroundBottom { 
@@ -95,10 +95,6 @@ hr {
 
     #logo {
         font-size: 1.25em;
-    }
-
-    hr {
-        width: 170px;
     }
 
     #stirFryButton {
