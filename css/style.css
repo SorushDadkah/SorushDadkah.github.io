@@ -686,7 +686,9 @@ footer h5 {
     .project2,
     .project3,
     .project4,
-    .project5 {
+    .project5,
+    .project6,
+    .project7{
         float: none;
         text-align: center;
         width: 90%;
