@@ -931,6 +931,10 @@ footer h5 {
         margin-bottom: 60px;
         width: 300px;
     }
+    
+    .project6 {
+        background-position-y: -150px;
+    }
 
     #teams {
         padding-bottom: 45px;
