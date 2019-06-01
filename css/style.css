@@ -790,6 +790,7 @@ footer h5 {
  /* Use a media query to add a breakpoint at 568px: */
 @media(max-width: 568px) {
     #home {
+        background: none;
         background-color: #8191a1;
     }
     header {
