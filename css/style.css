@@ -38,6 +38,7 @@ blockquote {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
+    transition-delay: 0ms;
     text-align: center;
 }
 
