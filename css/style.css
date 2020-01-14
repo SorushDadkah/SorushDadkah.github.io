@@ -455,6 +455,7 @@ header.shrink {
 }
 
 .humble-middle img {
+    margin: 0 auto;
     display: inline-block;
     margin: 20px 0 -5px 85px;
     border-radius: 100px;
