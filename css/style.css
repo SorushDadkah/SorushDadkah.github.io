@@ -408,6 +408,7 @@ header.shrink {
 
 /*-------------- PORTFOLIO SECTION -------------*/
 #about-me {
+    margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 80px;
 }
